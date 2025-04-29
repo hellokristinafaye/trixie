@@ -12,6 +12,9 @@
 
 // getComputerChoice();
 
+const humanScoreText = document.getElementById("human-score");
+humanScoreText.innerHTML = "what";
+
 const hand = ['rock', 'paper', 'scissors'];
 let humanScore = 0;
 let computerScore = 0;
@@ -79,4 +82,4 @@ function playGame() {
     }
 }
 
-playGame()
+// playGame()
