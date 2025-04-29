@@ -13,13 +13,17 @@
 // getComputerChoice();
 
 const humanScoreText = document.getElementById("human-score");
-humanScoreText.innerHTML = "what";
+const computerScoreText = document.getElementById("computer-score");
 
 const hand = ['rock', 'paper', 'scissors'];
-let humanScore = 0;
-let computerScore = 0;
+let humanScore = 12;
+let computerScore = 12;
 let humanChoice;
 let computerChoice;
+
+humanScoreText.innerHTML = humanScore;
+computerScoreText.innerHTML = computerScore;
+
 
 function getComputerChoice() {
     let choice = Math.floor(Math.random() * hand.length);
