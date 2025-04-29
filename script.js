@@ -16,8 +16,8 @@ const humanScoreText = document.getElementById("human-score");
 const computerScoreText = document.getElementById("computer-score");
 
 const hand = ['rock', 'paper', 'scissors'];
-let humanScore = 12;
-let computerScore = 12;
+let humanScore = 0;
+let computerScore = 0;
 let humanChoice;
 let computerChoice;
 
