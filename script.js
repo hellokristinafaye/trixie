@@ -24,7 +24,6 @@ let computerChoice;
 humanScoreText.innerHTML = humanScore;
 computerScoreText.innerHTML = computerScore;
 
-
 function getComputerChoice() {
     let choice = Math.floor(Math.random() * hand.length);
     console.log(hand[choice]);
@@ -45,10 +44,10 @@ function playRound(humanChoice, computerChoice) {
     // humanChoice = humanChoice.toLowerCase();
 
     if (humanChoice === computerChoice) {
-        return "It's a tie!";
+        return alert("It's a tie!");
     } else if (humanChoice === "rock" && computerChoice === "scissors") {
         humanScore++;
-        return `You win! ${humanChoice} beats ${computerChoice}`;
+        return alert(`You win! ${humanChoice} beats ${computerChoice}`);
     } else if (humanChoice === "rock" && computerChoice === "paper") {
         computerScore++;
         return `You lose! ${computerChoice} beats ${humanChoice}`;
@@ -86,4 +85,4 @@ function playGame() {
     }
 }
 
-// playGame()
+playGame()
